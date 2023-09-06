@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: "."
+  
+website:
+  title: "DANL 399"
+  page-footer: "Copyright 2023, Nicky Andrews" 
+  reader-mode: false
+  navbar:
+    pinned: true
+    left:
+      - text: project
+        href: basic-example.qmd
+            
+format:
+  html:
+    theme:
+      light: flatly
+      dark: [darkly, theme-dark.scss]
+    # mainfont: Georgia, serif;
+    # site-url: https://danl-web.netlify.app
+    css: styles.css
+    mainfont: Gill Sans, sans-serif;
+    toc: true
+    include-after-body: target_blank.html

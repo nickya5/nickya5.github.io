@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "basic-example.html",
+    "href": "basic-example.html",
+    "title": "Habbit",
+    "section": "",
+    "text": "(tab content) 1\n\n\n\n(tab content) 2\n\nlibrary(tidyverse)\nggplot(mpg) +\n  geom_boxplot(aes(x = class, y = hwy))"
+  },
+  {
+    "objectID": "basic-example.html#quarterly-results",
+    "href": "basic-example.html#quarterly-results",
+    "title": "Habbit",
+    "section": "",
+    "text": "(tab content) 1\n\n\n\n(tab content) 2\n\nlibrary(tidyverse)\nggplot(mpg) +\n  geom_boxplot(aes(x = class, y = hwy))"
+  },
+  {
+    "objectID": "basic-example.html#section-x",
+    "href": "basic-example.html#section-x",
+    "title": "Habbit",
+    "section": "0.2 Section X",
+    "text": "0.2 Section X\nThis is my introduction.\n\nx &lt;- 1\nprint(x)\n\n[1] 1"
+  },
+  {
+    "objectID": "basic-example.html#section-1.1",
+    "href": "basic-example.html#section-1.1",
+    "title": "Habbit",
+    "section": "1.1 Section 1.1",
+    "text": "1.1 Section 1.1\nDrink water"
+  },
+  {
+    "objectID": "basic-example.html#section-1.2",
+    "href": "basic-example.html#section-1.2",
+    "title": "Habbit",
+    "section": "1.2 Section 1.2",
+    "text": "1.2 Section 1.2\nSleep again"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nicky Andrews",
+    "section": "",
+    "text": "I am a student at State University of New York at Geneseo.\nI am interested in …\nI enjoy …"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Nicky Andrews",
+    "section": "Education",
+    "text": "Education\nState University of New York at Geneseo, 2023 - B.A. in Economics - Minor in Data Analytics"
+  }
+]

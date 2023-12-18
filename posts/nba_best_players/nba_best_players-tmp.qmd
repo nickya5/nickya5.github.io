@@ -1,0 +1,224 @@
+---
+title: "NBA Best Lineup"
+author: "Nicholas Andrews"
+date: "2023-12-17"
+categories: [beer, code, data-analysis]
+image: "nba_best_players.png"
+
+execute: 
+  warning: false
+  message: false
+  echo: true
+  eval: true
+  fig-width: 9
+  
+toc: true
+---
+
+```{r setup}
+#| include: false
+
+library(tidyverse)
+library(socviz)
+library(lubridate)
+library(knitr)
+library(kableExtra)
+library(ggthemes)
+library(ggthemr)
+library(ggthemes)
+library(ggrepel)
+library(hrbrthemes)
+library(hexbin)
+library(ggforce)
+library(RColorBrewer)
+library(ggplot2)
+library(readxl)
+library(plotly)
+
+knitr::opts_chunk$set(fig.width=8, fig.height=5,
+                      echo = T, eval = T, 
+                      message=F, warning = F, fig.cap = " ")  
+
+theme_set(theme_classic() +
+          theme(strip.background =element_rect(fill="lightgray"),
+                axis.title.x = element_text(size=rel(1)),
+                axis.title.y = element_text(size=rel(1)),
+                ))
+```
+
+```{r}
+# Load the dataset
+nba_data <- read_excel("C:/Users/nicka/OneDrive/Desktop/Fall 2023/Data 399/NBA_Goat.xlsx")
+# View(nba_data)
+
+```
+
+
+```{r}
+#| results: asis
+#| echo: false
+#| 
+rmarkdown::paged_table(nba_data) 
+```
+
+
+<br>
+
+```{r}
+
+# Define the weights for each variable
+weights <- c(PER_playoffs = 7, 
+             Offensive_win_shares_playoffs_per_season = 8, 
+             Offensive_rating_playoffs = 10, 
+             VORP_playoffs_per_season = 11, 
+             Box_plus_minus_playoffs = 12, 
+             Number_of_Championships = 14, 
+             Win_shares_per_48_playoffs = 13, 
+             Defensive_win_shares_playoffs_per_season = 8)
+
+# Standardize the relevant columns
+columns_to_standardize <- c('PER_playoffs', 'Offensive_win_shares_playoffs_per_season', 
+                            'Offensive_rating_playoffs', 'VORP_playoffs_per_season', 
+                            'Box_plus_minus_playoffs', 'Number_of_Championships', 
+                            'Win_shares_per_48_playoffs', 'Defensive_win_shares_playoffs_per_season')
+
+nba_data[columns_to_standardize] <- scale(nba_data[columns_to_standardize])
+
+# Calculate the composite score
+nba_data$Composite_Score_Standardized <- with(nba_data, 
+                                              PER_playoffs * weights['PER_playoffs'] +
+                                              Offensive_win_shares_playoffs_per_season * weights['Offensive_win_shares_playoffs_per_season'] +
+                                              Offensive_rating_playoffs * weights['Offensive_rating_playoffs'] +
+                                              VORP_playoffs_per_season * weights['VORP_playoffs_per_season'] +
+                                              Box_plus_minus_playoffs * weights['Box_plus_minus_playoffs'] +
+                                              Number_of_Championships * weights['Number_of_Championships'] +
+                                              Win_shares_per_48_playoffs * weights['Win_shares_per_48_playoffs'] +
+                                              Defensive_win_shares_playoffs_per_season * weights['Defensive_win_shares_playoffs_per_season'])
+
+# Finding the player with the highest composite score in each position
+best_composite_scores_by_position_standardized <- nba_data %>%
+  group_by(Position) %>%
+  top_n(1, Composite_Score_Standardized) %>%
+  select(Player, Position, Composite_Score_Standardized)
+
+# Print the results
+print(best_composite_scores_by_position_standardized)
+
+
+rmarkdown::paged_table(best_composite_scores_by_position_standardized)
+
+```
+
+
+```{r}
+p <- ggplot(data = nba_data,
+       aes(x = Composite_Score_Standardized,
+           y = reorder(Player, +Composite_Score_Standardized),
+           fill = Composite_Score_Standardized)) +
+  geom_point(color = "#0072B2", size = 1.75) +
+  geom_text(aes(label = ""), hjust = -.25,
+            size = 2) +
+  facet_wrap(.~Position, scales = "free_y") +
+  scale_x_continuous(
+    name = NULL,
+    lim = c(-100, 200)) +
+  scale_y_discrete(name = NULL) +
+  labs(title = 'Player Composite Score') +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(size = rel(.75)),
+    axis.text.y = element_text(size = rel(.75)),
+    plot.title = element_text(size = rel(1.5),
+                              hjust = 0.5,
+                              face = 'bold'),
+    strip.text = element_text(size = rel(1.25),
+                              face = 'bold')) + 
+  theme(legend.position = "none")+labs(x = NULL, y = "Player")
+fig <- ggplotly(p)
+fig
+
+```
+
+##PCA 
+
+```{r}
+
+library(FactoMineR)
+library(factoextra)
+library(caret)
+
+predictors <- scale(nba_data[, c('PER_playoffs', 'Offensive_win_shares_playoffs_per_season', 
+                                 'Offensive_rating_playoffs', 'VORP_playoffs_per_season', 
+                                 'Box_plus_minus_playoffs', 'Number_of_Championships', 
+                                 'Win_shares_per_48_playoffs', 'Defensive_win_shares_playoffs_per_season')])
+
+# Perform PCA
+pca_result <- PCA(predictors, graph = FALSE)
+pca_scores <- data.frame(pca_result$ind$coord[, 1:5])
+response <- nba_data$Composite_Score_Standardized
+regression_data <- cbind(pca_scores, response)
+
+
+lm_model <- lm(response ~ ., data = regression_data)
+summary(lm_model)
+
+# Get coefficients from the regression model
+regression_coefficients <- coef(lm_model)[-1]  
+
+
+pca_loadings <- pca_result$var$coord
+
+original_variable_influence <- pca_loadings %*% 
+  matrix(regression_coefficients, ncol = 1)
+
+original_variable_influence
+
+```
+
+```{r}
+library(gganimate)
+
+influence_data <- as.data.frame(original_variable_influence)
+influence_data$Variable <- rownames(original_variable_influence)
+names(influence_data) <- c("Influence", "Variable")
+
+Coefficients <- ggplot(influence_data, 
+       aes(y = Variable, x = Influence,
+           fill = Variable)) +
+  geom_bar(stat = "identity") +
+  theme_minimal() +
+  coord_flip() +
+  xlab("Coefficient Value") +
+  ylab("Coefficients") +
+  ggtitle("Coefficient Plot of Original Variables") + 
+  theme(legend.position = "bottom")+
+  theme(axis.text.x = element_blank()) + 
+  theme(legend.text = element_text(size = 5))+ 
+  theme(legend.title=element_blank()) +
+  enter_fade()+
+  exit_fade()
+Coefficients
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

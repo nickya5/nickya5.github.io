@@ -3,16 +3,16 @@ project:
   output-dir: "."
 
 website:
-  title: "YOUR NAME"
+  title: "Nicholas Andrews"
   navbar:
     pinned: true
     left:
       - text: Project
-        href: project.qmd
+        href: nba_best_players/nba_best_players.qmd
       - text: Blog
         href: blog-listing.qmd
   page-footer: 
-    center: "Powered with GitHub and Quarto<br>© YOUR NAME, 2023"
+    center: "Powered with GitHub and Quarto<br>© Nicholas Andrews, 2023"
 
 format:
   html:

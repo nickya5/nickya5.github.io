@@ -3,19 +3,16 @@ project:
   output-dir: "."
 
 website:
-  title: "Nicky Andrews"
+  title: "YOUR NAME"
   navbar:
     pinned: true
     left:
+      - text: Project
+        href: project.qmd
       - text: Blog
         href: blog-listing.qmd
-      - text: NBA Best Line-up Data
-        href: nba_best_players.qmd
-      - text: NBA Best Line-up Writing
-        href: ClassDANLFinal_Project.docx
-
   page-footer: 
-    center: "Powered with GitHub and Quarto<br>© Nicky Andrews, 2023"
+    center: "Powered with GitHub and Quarto<br>© YOUR NAME, 2023"
 
 format:
   html:

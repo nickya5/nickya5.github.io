@@ -1,8 +1,10 @@
 /* css styles */
 
+.nav-title{
+  font-family: fantasy
+}
 
-.dropdown-menu {
-  height: 500px;
-  max-height:700px;
-  overflow-y: scroll;
+/* to fix the width of body and navbar with invisible scrollbar */
+::-webkit-scrollbar {
+    width: 0px;
 }

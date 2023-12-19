@@ -1,36 +1,40 @@
 ---
 title: "Nicky Andrews" 
 about:
-  template: solana
-  image: img/logo.png
+  template: trestles  # jolla  trestles  solana  marquee  broadside
+  image: img/profile.png
+  image-width: 16em
+  image-shape: round # rectangle  round  rounded
+  
   links:
-    - text: GitHub
-      icon: github
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/nicky-andrews/
+    - icon: github
+      text: GitHub
       href: https://github.com/nicka5
-    - text: LinkedIn
-      icon: linkedin
-      href: https://www.linkedin.com/in/YOUR_LINKEDIN/
-    - text: Twitter
-      icon: twitter
-      href: https://twitter.com/YOUR_SOCIAL_MEDIA
-    - text: Email
-      icon: envelope
+    - icon: file-earmark-pdf
+      text: Resumé
+      href: Nicholas_Andrews_Resume.pdf
+    - icon: mailbox
+      text: Email
       href: mailto:nsa5@geneseo.edu
-    - text: Résumé
-      icon: file-pd
-      href: https://YOUR_GITHUB.github.io/YOUR_RESUME.pdf
+
 ---
 
 
-I am a student at State University of New York at Geneseo.
 
-I am interested in running
+I am a student at State University of New York at Geneseo. As an Economics major I am interested in research. My favorite research sectors are the economics of policy development and the economics of sports. Although these two sectors interest me the most, any research that may cause actual change interests me.
 
-I enjoy cooking, Netflix, and football
-
+Outside of economics I am a college runner at the D3 level. I have seen great success through my ability to put forth a high amount of work ethic, time management, and communication skills with teammates. 
 
 ## Education
 
 **State University of New York at Geneseo**, 2023<br>
 - B.A. in Economics<br>
 - Minor in Data Analytics
+
+## Experience
+
+
+

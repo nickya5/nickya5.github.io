@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: "."
+
+website:
+  title: "Nicky Andrews"
+  navbar:
+    pinned: true
+    left:
+      - text: Blog
+        href: blog-listing.qmd
+      - text: NBA Best Line-up Data
+        href: nba_best_players.qmd
+      - text: NBA Best Line-up Writing
+        href: ClassDANLFinal_Project.docx
+
+  page-footer: 
+    center: "Powered with GitHub and Quarto<br>© Nicky Andrews, 2023"
+
+format:
+  html:
+    theme: 
+      light: flatly
+      dark: darkly
+    mainfont: system-ui; 
+    highlight-style: atom-one
+    css: styles.css
+    toc: false
+    include-after-body: target_blank.html
+    

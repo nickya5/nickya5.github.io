@@ -1,0 +1,14 @@
+{
+  "hash": "d184c1de100975590d80c0dad6c04a58",
+  "result": {
+    "markdown": "---\ntitle: \"NBA Best Lineup\"\nauthor: \"Nicholas Andrews\"\ndate: \"2023-11-02\"\ncategories: [beer, code, data-analysis]\nimage: \"nba_best_players.png\"\n\nexecute: \n  warning: false\n  message: false\n  \ntoc: true\n---\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(readxl)\nNFL_injuries <- read_excel(\"C:/Users/nicka/OneDrive/Desktop/Fall 2023/Data 399/nickya5.github.io/posts/NFL_injuries/NFL_injuries.xlsx\")\nView(NFL_injuries)\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\ncolnames(NFL_injuries)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n [1] \"Player\"                         \"Team\"                          \n [3] \"Place\"                          \"Date\"                          \n [5] \"Opposing_Team\"                  \"Divisional_Game\"               \n [7] \"Position\"                       \"Pre-Season_Injury?\"            \n [9] \"Week_of_Injury\"                 \"Season\"                        \n[11] \"Weeks_Injured\"                  \"Games_Missed\"                  \n[13] \"Unknown_Injury?\"                \"Reported_Injury_Type\"          \n[15] \"Total_Snaps\"                    \"Average_Playtime_Before_Injury\"\n```\n:::\n\n```{.r .cell-code}\nNFL_injuries <- na.omit(NFL_injuries)\n\nNFL_injuries$Place <- as.factor(NFL_injuries$Place)\nNFL_injuries$Opposing_Team <- as.factor(NFL_injuries$Opposing_Team)\nNFL_injuries$Position <- as.factor(NFL_injuries$Position)\nNFL_injuries$Week_of_Injury <- as.factor(NFL_injuries$Week_of_Injury) # If it's categorical\nNFL_injuries$Team <- as.factor(NFL_injuries$Team)\nNFL_injuries$Divisional_Game <- as.factor(NFL_injuries$Divisional_Game) # If it's categorical\n# Continue for other categorical variables\n\n# model <- lm(Reported_Injury_Type ~ Place + Opposing_Team + Position + Week_of_Injury + Team + Divisional_Game + Average_Playtime_Before_Injury, data = NFL_injuries)\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

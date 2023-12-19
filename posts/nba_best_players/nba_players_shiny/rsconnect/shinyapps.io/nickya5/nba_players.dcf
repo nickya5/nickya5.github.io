@@ -1,0 +1,12 @@
+name: nba_players
+title: nba_players
+username: nickya5
+account: nickya5
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10800674
+bundleId: 8058936
+url: https://nickya5.shinyapps.io/nba_players/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

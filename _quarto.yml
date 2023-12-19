@@ -7,8 +7,10 @@ website:
   navbar:
     pinned: true
     left:
-      - text: Project
+      - text: NBA Data
         href: nba_best_players/nba_best_players.qmd
+      - text: NBA Write-up
+        href: nba_best_players/nba_best_players_writeup.qmd
       - text: Blog
         href: blog-listing.qmd
   page-footer: 

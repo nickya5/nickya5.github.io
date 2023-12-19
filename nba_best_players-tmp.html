@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nicholas Andrews">
+<meta name="dcterms.date" content="2023-12-17">
+
+<title>Nicky Andrews - NBA Best Lineup</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+<link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<script src="../../site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="../../site_libs/plotly-binding-4.10.3/plotly.js"></script>
+<script src="../../site_libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="../../site_libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="../../site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="../../site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<link href="../../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="../../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Nicky Andrews</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog-listing.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../nba_best_players.qmd" rel="" target="">
+ <span class="menu-text">NBA Best Line-up Data</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../ClassDANLFinal_Project.docx" rel="" target="">
+ <span class="menu-text">NBA Best Line-up Writing</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">NBA Best Lineup</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">beer</div>
+                <div class="quarto-category">code</div>
+                <div class="quarto-category">data-analysis</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Nicholas Andrews </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">December 17, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the dataset</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>nba_data <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"C:/Users/nicka/OneDrive/Desktop/Fall 2023/Data 399/NBA_Goat.xlsx"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># View(nba_data)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["Player"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Position"],"name":[2],"type":["chr"],"align":["left"]},{"label":["Seasons"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Offensive_rating_playoffs"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["Offensive_win_shares_playoffs"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["Offensive_win_shares_playoffs_per_season"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["VORP_playoffs"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["VORP_playoffs_per_season"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["Defensive_win_shares_playoffs"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["Defensive_win_shares_playoffs_per_season"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["Win_shares_per_48_playoffs"],"name":[11],"type":["dbl"],"align":["right"]},{"label":["Box_plus_minus_playoffs"],"name":[12],"type":["dbl"],"align":["right"]},{"label":["PER_playoffs"],"name":[13],"type":["dbl"],"align":["right"]},{"label":["Number_of_Championships"],"name":[14],"type":["dbl"],"align":["right"]}],"data":[{"1":"Reggie Miller","2":"SG","3":"18","4":"119.21","5":"16.18","6":"0.8988889","7":"9.42","8":"0.5233333","9":"3.71","10":"0.20611111","11":"0.1799","12":"5.04","13":"19.55","14":"0"},{"1":"Micheal Jordan","2":"SG","3":"13","4":"118.33","5":"27.32","6":"2.1015385","7":"24.73","8":"1.9023077","9":"12.44","10":"0.95692308","11":"0.2553","12":"11.14","13":"28.60","14":"6"},{"1":"Ray Allen","2":"SG","3":"18","4":"115.39","5":"12.76","6":"0.7088889","7":"7.91","8":"0.4394444","9":"5.28","10":"0.29333333","11":"0.1428","12":"3.20","13":"16.27","14":"1"},{"1":"James Harden","2":"SG","3":"13","4":"114.66","5":"14.55","6":"1.1192308","7":"11.87","8":"0.9130769","9":"6.06","10":"0.46615385","11":"0.1720","12":"6.22","13":"22.04","14":"0"},{"1":"George Gervin","2":"SG","3":"14","4":"112.82","5":"8.04","6":"0.5742857","7":"4.08","8":"0.2914286","9":"1.00","10":"0.07142857","11":"0.1462","12":"3.39","13":"21.16","14":"0"},{"1":"Clyde Drexler","2":"SG","3":"15","4":"112.58","5":"9.63","6":"0.6420000","7":"10.65","8":"0.7100000","9":"5.86","10":"0.39066667","11":"0.1335","12":"5.61","13":"19.71","14":"1"},{"1":"Manu Ginobili","2":"SG","3":"19","4":"111.36","5":"12.18","6":"0.6410526","7":"10.44","8":"0.5494737","9":"8.58","10":"0.45157895","11":"0.1640","12":"4.83","13":"19.33","14":"4"},{"1":"Kobe Bryant","2":"SG","3":"20","4":"109.77","5":"20.97","6":"1.0485000","7":"16.15","8":"0.8075000","9":"7.29","10":"0.36450000","11":"0.1570","12":"5.39","13":"22.40","14":"5"},{"1":"Dwayne Wade","2":"SG","3":"16","4":"107.73","5":"12.29","6":"0.7681250","7":"12.30","8":"0.7687500","9":"9.33","10":"0.58312500","11":"0.1550","12":"5.26","13":"22.37","14":"2"},{"1":"Allen Iverson","2":"SG","3":"14","4":"100.00","5":"5.55","6":"0.3964286","7":"5.46","8":"0.3900000","9":"0.50","10":"0.03571429","11":"0.1087","12":"4.75","13":"21.24","14":"0"},{"1":"Kawhi Leonard","2":"SF","3":"12","4":"122.18","5":"14.93","6":"1.2441667","7":"12.51","8":"1.0425000","9":"7.94","10":"0.66166667","11":"0.2254","12":"8.20","13":"24.29","14":"1"},{"1":"Lebron James","2":"SF","3":"20","4":"116.54","5":"39.43","6":"1.9715000","7":"35.40","8":"1.7700000","9":"18.45","10":"0.92250000","11":"0.2384","12":"10.04","13":"27.94","14":"4"},{"1":"James Worthy","2":"SF","3":"12","4":"115.74","5":"9.63","6":"0.8025000","7":"6.50","8":"0.5416667","9":"5.21","10":"0.43416667","11":"0.1345","12":"2.86","13":"18.31","14":"3"},{"1":"Kevin Durant","2":"SF","3":"16","4":"115.48","5":"18.66","6":"1.1662500","7":"14.84","8":"0.9275000","9":"7.60","10":"0.47500000","11":"0.1874","12":"6.75","13":"24.08","14":"2"},{"1":"Larry Bird","2":"SF","3":"13","4":"114.08","5":"13.78","6":"1.0600000","7":"15.35","8":"1.1807692","9":"11.05","10":"0.85000000","11":"0.1731","12":"6.86","13":"21.41","14":"3"},{"1":"Julius Erving","2":"SF","3":"16","4":"110.09","5":"16.29","6":"1.0181250","7":"9.62","8":"0.6012500","9":"10.60","10":"0.66250000","11":"0.1756","12":"6.03","13":"22.05","14":"1"},{"1":"Scottie Pippen","2":"SF","3":"17","4":"107.51","5":"9.46","6":"0.5564706","7":"14.18","8":"0.8341176","9":"14.12","10":"0.83058824","11":"0.1396","12":"4.91","13":"18.35","14":"6"},{"1":"Dominique Wilkins","2":"SF","3":"15","4":"106.30","5":"2.00","6":"0.1333333","7":"2.51","8":"0.1673333","9":"1.00","10":"0.06666667","11":"0.1000","12":"2.59","13":"18.71","14":"0"},{"1":"Tracy McGrady","2":"SF","3":"14","4":"105.60","5":"2.97","6":"0.2121429","7":"3.97","8":"0.2835714","9":"1.00","10":"0.07142857","11":"0.1251","12":"7.10","13":"23.40","14":"0"},{"1":"Paul Pierce","2":"SF","3":"19","4":"100.00","5":"7.09","6":"0.3731579","7":"8.14","8":"0.4284211","9":"9.23","10":"0.48578947","11":"0.1257","12":"3.19","13":"17.18","14":"1"},{"1":"Magic Johnson","2":"PG","3":"12","4":"122.00","5":"23.10","6":"1.9250000","7":"18.34","8":"1.5283333","9":"9.53","10":"0.79416667","11":"0.2078","12":"7.62","13":"22.95","14":"5"},{"1":"Chris Paul","2":"PG","3":"19","4":"118.96","5":"16.01","6":"0.8426316","7":"11.86","8":"0.6242105","9":"5.21","10":"0.27421053","11":"0.1872","12":"6.60","13":"23.18","14":"0"},{"1":"Steph Curry","2":"PG","3":"15","4":"116.46","5":"15.55","6":"1.0366667","7":"12.49","8":"0.8326667","9":"6.13","10":"0.40866667","11":"0.1895","12":"7.00","13":"22.97","14":"4"},{"1":"John Stockton","2":"PG","3":"19","4":"115.98","5":"14.27","6":"0.7510526","7":"12.93","8":"0.6805263","9":"7.09","10":"0.37315789","11":"0.1602","12":"6.01","13":"19.84","14":"0"},{"1":"Steve Nash","2":"PG","3":"18","4":"115.91","5":"11.74","6":"0.6522222","7":"5.56","8":"0.3088889","9":"1.00","10":"0.05555556","11":"0.1328","12":"3.19","13":"19.84","14":"0"},{"1":"Damien Lillard","2":"PG","3":"12","4":"113.06","5":"5.17","6":"0.4308333","7":"3.82","8":"0.3183333","9":"0.50","10":"0.04166667","11":"0.1137","12":"4.34","13":"19.76","14":"0"},{"1":"Isaiah Thomas","2":"PG","3":"13","4":"109.90","5":"5.48","6":"0.4215385","7":"8.47","8":"0.6515385","9":"7.07","10":"0.54384615","11":"0.1429","12":"5.97","13":"19.80","14":"2"},{"1":"Gary Payton","2":"PG","3":"16","4":"107.40","5":"7.01","6":"0.4381250","7":"5.30","8":"0.3312500","9":"4.10","10":"0.25625000","11":"0.9000","12":"1.85","13":"15.41","14":"0"},{"1":"Russell Westbrook","2":"PG","3":"16","4":"105.91","5":"6.22","6":"0.3887500","7":"7.26","8":"0.4537500","9":"4.22","10":"0.26375000","11":"0.1149","12":"4.61","13":"22.00","14":"0"},{"1":"Jason Kidd","2":"PG","3":"18","4":"100.00","5":"6.31","6":"0.3505556","7":"9.71","8":"0.5394444","9":"8.10","10":"0.45000000","11":"0.1139","12":"4.30","13":"17.10","14":"0"},{"1":"Kevin McHale","2":"PF","3":"13","4":"121.63","5":"14.48","6":"1.1138462","7":"7.75","8":"0.5961538","9":"6.19","10":"0.47615385","11":"0.1736","12":"3.43","13":"19.36","14":"3"},{"1":"Anthony Davis","2":"PF","3":"11","4":"120.90","5":"5.90","6":"0.5363636","7":"4.60","8":"0.4181818","9":"3.67","10":"0.33363636","11":"0.2250","12":"6.80","13":"26.60","14":"1"},{"1":"Charles Barkley","2":"PF","3":"16","4":"118.16","5":"13.60","6":"0.8500000","7":"10.15","8":"0.6343750","9":"5.91","10":"0.36937500","11":"0.1932","12":"6.30","13":"24.18","14":"0"},{"1":"Dirk Nowitzki","2":"PF","3":"21","4":"116.91","5":"17.99","6":"0.8566667","7":"11.79","8":"0.5614286","9":"5.14","10":"0.24476190","11":"0.1884","12":"5.93","13":"23.82","14":"1"},{"1":"Pau Gasol","2":"PF","3":"18","4":"115.62","5":"10.47","6":"0.5816667","7":"7.38","8":"0.4100000","9":"5.03","10":"0.27944444","11":"0.1542","12":"4.05","13":"20.20","14":"2"},{"1":"Giannis Antetokounmpo","2":"PF","3":"11","4":"112.46","5":"5.34","6":"0.4854545","7":"7.33","8":"0.6663636","9":"5.81","10":"0.52818182","11":"0.1875","12":"8.17","13":"25.59","14":"1"},{"1":"Chris Bosh","2":"PF","3":"13","4":"111.65","5":"5.66","6":"0.4353846","7":"3.04","8":"0.2338462","9":"3.72","10":"0.28615385","11":"0.1437","12":"1.85","13":"18.42","14":"2"},{"1":"Draymond Green","2":"PF","3":"11","4":"111.41","5":"6.84","6":"0.6218182","7":"8.60","8":"0.7818182","9":"9.50","10":"0.86363636","11":"0.1440","12":"4.30","13":"8.60","14":"4"},{"1":"Tim Duncan","2":"PF","3":"19","4":"110.19","5":"20.46","6":"1.0768421","7":"18.56","8":"0.9768421","9":"17.38","10":"0.91473684","11":"0.1939","12":"5.86","13":"24.28","14":"5"},{"1":"Karl Malone","2":"PF","3":"19","4":"106.40","5":"11.35","6":"0.5973684","7":"12.07","8":"0.6352632","9":"11.64","10":"0.61263158","11":"0.1396","12":"4.05","13":"21.12","14":"0"},{"1":"Kevin Garnett","2":"PF","3":"21","4":"100.00","5":"7.10","6":"0.3380952","7":"9.45","8":"0.4500000","9":"9.32","10":"0.44380952","11":"0.1492","12":"5.08","13":"21.12","14":"1"},{"1":"Nikola Jokic","2":"C","3":"8","4":"124.18","5":"9.81","6":"1.2262500","7":"7.97","8":"0.9962500","9":"2.75","10":"0.34375000","11":"0.2358","12":"10.42","13":"29.02","14":"1"},{"1":"Moses Malone","2":"C","3":"19","4":"114.88","5":"9.80","6":"0.5157895","7":"4.92","8":"0.2589474","9":"5.00","10":"0.26315789","11":"0.1762","12":"3.27","13":"21.57","14":"1"},{"1":"Kareem Abdul-Jabaar","2":"C","3":"20","4":"113.67","5":"21.82","6":"1.0910000","7":"12.99","8":"0.6495000","9":"13.74","10":"0.68700000","11":"0.1929","12":"5.33","13":"23.01","14":"6"},{"1":"Hakeem Olajuwan","2":"C","3":"18","4":"112.28","5":"11.88","6":"0.6600000","7":"12.87","8":"0.7150000","9":"10.72","10":"0.59555556","11":"0.1887","12":"6.89","13":"25.69","14":"2"},{"1":"David Robinson","2":"C","3":"14","4":"110.49","5":"7.83","6":"0.5592857","7":"8.67","8":"0.6192857","9":"9.69","10":"0.69214286","11":"0.1992","12":"6.15","13":"23.02","14":"1"},{"1":"Shaquelle O'Neal","2":"C","3":"19","4":"110.23","5":"20.12","6":"1.0589474","7":"15.32","8":"0.8063158","9":"10.96","10":"0.57684211","11":"0.1842","12":"5.48","13":"26.13","14":"4"},{"1":"Patrick Ewing","2":"C","3":"17","4":"100.00","5":"4.04","6":"0.2376471","7":"6.73","8":"0.3958824","9":"10.02","10":"0.58941176","11":"0.1296","12":"3.12","13":"19.63","14":"0"},{"1":"Joel Embiid","2":"C","3":"8","4":"109.03","5":"2.50","6":"0.3125000","7":"2.56","8":"0.3200000","9":"3.09","10":"0.38625000","11":"0.1341","12":"3.50","13":"21.60","14":"0"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+
+ 
+</div>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the weights for each variable</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>weights <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">PER_playoffs =</span> <span class="dv">7</span>, </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">Offensive_win_shares_playoffs_per_season =</span> <span class="dv">8</span>, </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">Offensive_rating_playoffs =</span> <span class="dv">10</span>, </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">VORP_playoffs_per_season =</span> <span class="dv">11</span>, </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">Box_plus_minus_playoffs =</span> <span class="dv">12</span>, </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>             <span class="at">Number_of_Championships =</span> <span class="dv">14</span>, </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>             <span class="at">Win_shares_per_48_playoffs =</span> <span class="dv">13</span>, </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>             <span class="at">Defensive_win_shares_playoffs_per_season =</span> <span class="dv">8</span>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Standardize the relevant columns</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>columns_to_standardize <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'PER_playoffs'</span>, <span class="st">'Offensive_win_shares_playoffs_per_season'</span>, </span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>                            <span class="st">'Offensive_rating_playoffs'</span>, <span class="st">'VORP_playoffs_per_season'</span>, </span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>                            <span class="st">'Box_plus_minus_playoffs'</span>, <span class="st">'Number_of_Championships'</span>, </span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>                            <span class="st">'Win_shares_per_48_playoffs'</span>, <span class="st">'Defensive_win_shares_playoffs_per_season'</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>nba_data[columns_to_standardize] <span class="ot">&lt;-</span> <span class="fu">scale</span>(nba_data[columns_to_standardize])</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the composite score</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>nba_data<span class="sc">$</span>Composite_Score_Standardized <span class="ot">&lt;-</span> <span class="fu">with</span>(nba_data, </span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>                                              PER_playoffs <span class="sc">*</span> weights[<span class="st">'PER_playoffs'</span>] <span class="sc">+</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>                                              Offensive_win_shares_playoffs_per_season <span class="sc">*</span> weights[<span class="st">'Offensive_win_shares_playoffs_per_season'</span>] <span class="sc">+</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>                                              Offensive_rating_playoffs <span class="sc">*</span> weights[<span class="st">'Offensive_rating_playoffs'</span>] <span class="sc">+</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>                                              VORP_playoffs_per_season <span class="sc">*</span> weights[<span class="st">'VORP_playoffs_per_season'</span>] <span class="sc">+</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>                                              Box_plus_minus_playoffs <span class="sc">*</span> weights[<span class="st">'Box_plus_minus_playoffs'</span>] <span class="sc">+</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>                                              Number_of_Championships <span class="sc">*</span> weights[<span class="st">'Number_of_Championships'</span>] <span class="sc">+</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>                                              Win_shares_per_48_playoffs <span class="sc">*</span> weights[<span class="st">'Win_shares_per_48_playoffs'</span>] <span class="sc">+</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>                                              Defensive_win_shares_playoffs_per_season <span class="sc">*</span> weights[<span class="st">'Defensive_win_shares_playoffs_per_season'</span>])</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Finding the player with the highest composite score in each position</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>best_composite_scores_by_position_standardized <span class="ot">&lt;-</span> nba_data <span class="sc">%&gt;%</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Position) <span class="sc">%&gt;%</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">top_n</span>(<span class="dv">1</span>, Composite_Score_Standardized) <span class="sc">%&gt;%</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Player, Position, Composite_Score_Standardized)</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the results</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(best_composite_scores_by_position_standardized)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 3
+# Groups:   Position [5]
+  Player         Position Composite_Score_Standardized
+  &lt;chr&gt;          &lt;chr&gt;                           &lt;dbl&gt;
+1 Micheal Jordan SG                              176. 
+2 Lebron James   SF                              141. 
+3 Magic Johnson  PG                              117. 
+4 Tim Duncan     PF                               60.2
+5 Nikola Jokic   C                                79.1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>rmarkdown<span class="sc">::</span><span class="fu">paged_table</span>(best_composite_scores_by_position_standardized)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["Player"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Position"],"name":[2],"type":["chr"],"align":["left"]},{"label":["Composite_Score_Standardized"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"Micheal Jordan","2":"SG","3":"175.60039"},{"1":"Lebron James","2":"SF","3":"140.81110"},{"1":"Magic Johnson","2":"PG","3":"117.23614"},{"1":"Tim Duncan","2":"PF","3":"60.20839"},{"1":"Nikola Jokic","2":"C","3":"79.11812"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+
+ 
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> nba_data,</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> Composite_Score_Standardized,</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> <span class="fu">reorder</span>(Player, <span class="sc">+</span>Composite_Score_Standardized),</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">fill =</span> Composite_Score_Standardized)) <span class="sc">+</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"#0072B2"</span>, <span class="at">size =</span> <span class="fl">1.75</span>) <span class="sc">+</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="st">""</span>), <span class="at">hjust =</span> <span class="sc">-</span>.<span class="dv">25</span>,</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(.<span class="sc">~</span>Position, <span class="at">scales =</span> <span class="st">"free_y"</span>) <span class="sc">+</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="cn">NULL</span>,</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">lim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">100</span>, <span class="dv">200</span>)) <span class="sc">+</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_discrete</span>(<span class="at">name =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">'Player Composite Score'</span>) <span class="sc">+</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="fu">rel</span>(.<span class="dv">75</span>)),</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="fu">rel</span>(.<span class="dv">75</span>)),</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="fu">rel</span>(<span class="fl">1.5</span>),</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>                              <span class="at">hjust =</span> <span class="fl">0.5</span>,</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>                              <span class="at">face =</span> <span class="st">'bold'</span>),</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="fu">rel</span>(<span class="fl">1.25</span>),</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>                              <span class="at">face =</span> <span class="st">'bold'</span>)) <span class="sc">+</span> </span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)<span class="sc">+</span><span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"Player"</span>)</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">ggplotly</span>(p)</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>fig</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-dc694b6b7009e8df921b" style="width:100%;height:406px;"></div>
+<script type="application/json" data-for="htmlwidget-dc694b6b7009e8df921b">{"x":{"data":[{"x":[79.118121464151059,-37.309430826519161,50.433235675580335,23.703008116889944,3.5521580205169609,36.706186810041906,-69.290650263020908,-55.579240375082428],"y":[8,3,7,5,4,6,1,2],"text":["Composite_Score_Standardized:  79.1181215<br />reorder(Player, +Composite_Score_Standardized): Nikola Jokic<br />Composite_Score_Standardized:  79.1181215","Composite_Score_Standardized: -37.3094308<br />reorder(Player, +Composite_Score_Standardized): Moses Malone<br />Composite_Score_Standardized: -37.3094308","Composite_Score_Standardized:  50.4332357<br />reorder(Player, +Composite_Score_Standardized): Kareem Abdul-Jabaar<br />Composite_Score_Standardized:  50.4332357","Composite_Score_Standardized:  23.7030081<br />reorder(Player, +Composite_Score_Standardized): Hakeem Olajuwan<br />Composite_Score_Standardized:  23.7030081","Composite_Score_Standardized:   3.5521580<br />reorder(Player, +Composite_Score_Standardized): David Robinson<br />Composite_Score_Standardized:   3.5521580","Composite_Score_Standardized:  36.7061868<br />reorder(Player, +Composite_Score_Standardized): Shaquelle O'Neal<br />Composite_Score_Standardized:  36.7061868","Composite_Score_Standardized: -69.2906503<br />reorder(Player, +Composite_Score_Standardized): Patrick Ewing<br />Composite_Score_Standardized: -69.2906503","Composite_Score_Standardized: -55.5792404<br />reorder(Player, +Composite_Score_Standardized): Joel Embiid<br />Composite_Score_Standardized: -55.5792404"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":["rgba(60,125,178,1)","rgba(32,68,101,1)","rgba(53,111,158,1)","rgba(46,97,140,1)","rgba(42,88,127,1)","rgba(50,104,149,1)","rgba(24,54,81,1)","rgba(27,60,90,1)"],"opacity":1,"size":6.6141732283464574,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,114,178,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[12.8801389382311,16.041669230010186,6.4625451587504319,2.2077968630144582,-23.130312016197841,16.893001848852602,-54.9351595854829,-6.5838316896118503,60.208389096817612,-34.722020580310506,-46.560478894479424],"y":[8,9,7,6,4,10,1,5,11,3,2],"text":["Composite_Score_Standardized:  12.8801389<br />reorder(Player, +Composite_Score_Standardized): Kevin McHale<br />Composite_Score_Standardized:  12.8801389","Composite_Score_Standardized:  16.0416692<br />reorder(Player, +Composite_Score_Standardized): Anthony Davis<br />Composite_Score_Standardized:  16.0416692","Composite_Score_Standardized:   6.4625452<br />reorder(Player, +Composite_Score_Standardized): Charles Barkley<br />Composite_Score_Standardized:   6.4625452","Composite_Score_Standardized:   2.2077969<br />reorder(Player, +Composite_Score_Standardized): Dirk Nowitzki<br />Composite_Score_Standardized:   2.2077969","Composite_Score_Standardized: -23.1303120<br />reorder(Player, +Composite_Score_Standardized): Pau Gasol<br />Composite_Score_Standardized: -23.1303120","Composite_Score_Standardized:  16.8930018<br />reorder(Player, +Composite_Score_Standardized): Giannis Antetokounmpo<br />Composite_Score_Standardized:  16.8930018","Composite_Score_Standardized: -54.9351596<br />reorder(Player, +Composite_Score_Standardized): Chris Bosh<br />Composite_Score_Standardized: -54.9351596","Composite_Score_Standardized:  -6.5838317<br />reorder(Player, +Composite_Score_Standardized): Draymond Green<br />Composite_Score_Standardized:  -6.5838317","Composite_Score_Standardized:  60.2083891<br />reorder(Player, +Composite_Score_Standardized): Tim Duncan<br />Composite_Score_Standardized:  60.2083891","Composite_Score_Standardized: -34.7220206<br />reorder(Player, +Composite_Score_Standardized): Karl Malone<br />Composite_Score_Standardized: -34.7220206","Composite_Score_Standardized: -46.5604789<br />reorder(Player, +Composite_Score_Standardized): Kevin Garnett<br />Composite_Score_Standardized: -46.5604789"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":["rgba(44,92,133,1)","rgba(45,94,135,1)","rgba(42,89,129,1)","rgba(41,87,126,1)","rgba(35,75,110,1)","rgba(45,94,136,1)","rgba(28,60,90,1)","rgba(39,83,120,1)","rgba(56,116,165,1)","rgba(32,69,103,1)","rgba(30,64,95,1)"],"opacity":1,"size":6.6141732283464574,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,114,178,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x2","yaxis":"y2","hoverinfo":"text","frame":null},{"x":[117.23613896713586,3.3284821443701036,45.082986074139008,-11.376154478945486,-54.573885097997163,-59.151764252482522,-10.363221016917603,8.2477194787720691,-54.139795222432895,-67.238708967578361],"y":[10,7,9,5,3,2,6,8,4,1],"text":["Composite_Score_Standardized: 117.2361390<br />reorder(Player, +Composite_Score_Standardized): Magic Johnson<br />Composite_Score_Standardized: 117.2361390","Composite_Score_Standardized:   3.3284821<br />reorder(Player, +Composite_Score_Standardized): Chris Paul<br />Composite_Score_Standardized:   3.3284821","Composite_Score_Standardized:  45.0829861<br />reorder(Player, +Composite_Score_Standardized): Steph Curry<br />Composite_Score_Standardized:  45.0829861","Composite_Score_Standardized: -11.3761545<br />reorder(Player, +Composite_Score_Standardized): John Stockton<br />Composite_Score_Standardized: -11.3761545","Composite_Score_Standardized: -54.5738851<br />reorder(Player, +Composite_Score_Standardized): Steve Nash<br />Composite_Score_Standardized: -54.5738851","Composite_Score_Standardized: -59.1517643<br />reorder(Player, +Composite_Score_Standardized): Damien Lillard<br />Composite_Score_Standardized: -59.1517643","Composite_Score_Standardized: -10.3632210<br />reorder(Player, +Composite_Score_Standardized): Isaiah Thomas<br />Composite_Score_Standardized: -10.3632210","Composite_Score_Standardized:   8.2477195<br />reorder(Player, +Composite_Score_Standardized): Gary Payton<br />Composite_Score_Standardized:   8.2477195","Composite_Score_Standardized: -54.1397952<br />reorder(Player, +Composite_Score_Standardized): Russell Westbrook<br />Composite_Score_Standardized: -54.1397952","Composite_Score_Standardized: -67.2387090<br />reorder(Player, +Composite_Score_Standardized): Jason Kidd<br />Composite_Score_Standardized: -67.2387090"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":["rgba(70,145,205,1)","rgba(41,87,127,1)","rgba(52,108,155,1)","rgba(38,80,117,1)","rgba(28,60,90,1)","rgba(27,58,87,1)","rgba(38,81,118,1)","rgba(43,90,130,1)","rgba(28,60,90,1)","rgba(25,54,82,1)"],"opacity":1,"size":6.6141732283464574,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,114,178,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x3","yaxis":"y3","hoverinfo":"text","frame":null},{"x":[64.572423134166684,140.81109953665344,-15.408743328694898,36.721874320994552,53.456417050022843,4.5476864512695325,23.052347330905704,-93.259770759485946,-50.894853524136195,-66.635373684386977],"y":[9,10,4,7,8,5,6,1,3,2],"text":["Composite_Score_Standardized:  64.5724231<br />reorder(Player, +Composite_Score_Standardized): Kawhi Leonard<br />Composite_Score_Standardized:  64.5724231","Composite_Score_Standardized: 140.8110995<br />reorder(Player, +Composite_Score_Standardized): Lebron James<br />Composite_Score_Standardized: 140.8110995","Composite_Score_Standardized: -15.4087433<br />reorder(Player, +Composite_Score_Standardized): James Worthy<br />Composite_Score_Standardized: -15.4087433","Composite_Score_Standardized:  36.7218743<br />reorder(Player, +Composite_Score_Standardized): Kevin Durant<br />Composite_Score_Standardized:  36.7218743","Composite_Score_Standardized:  53.4564171<br />reorder(Player, +Composite_Score_Standardized): Larry Bird<br />Composite_Score_Standardized:  53.4564171","Composite_Score_Standardized:   4.5476865<br />reorder(Player, +Composite_Score_Standardized): Julius Erving<br />Composite_Score_Standardized:   4.5476865","Composite_Score_Standardized:  23.0523473<br />reorder(Player, +Composite_Score_Standardized): Scottie Pippen<br />Composite_Score_Standardized:  23.0523473","Composite_Score_Standardized: -93.2597708<br />reorder(Player, +Composite_Score_Standardized): Dominique Wilkins<br />Composite_Score_Standardized: -93.2597708","Composite_Score_Standardized: -50.8948535<br />reorder(Player, +Composite_Score_Standardized): Tracy McGrady<br />Composite_Score_Standardized: -50.8948535","Composite_Score_Standardized: -66.6353737<br />reorder(Player, +Composite_Score_Standardized): Paul Pierce<br />Composite_Score_Standardized: -66.6353737"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":["rgba(57,118,168,1)","rgba(77,158,222,1)","rgba(37,78,115,1)","rgba(50,104,149,1)","rgba(54,112,160,1)","rgba(42,88,128,1)","rgba(46,97,140,1)","rgba(19,43,67,1)","rgba(29,62,92,1)","rgba(25,55,83,1)"],"opacity":1,"size":6.6141732283464574,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,114,178,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y4","hoverinfo":"text","frame":null},{"x":[-17.507049650206614,175.60039498771718,-41.062722565177744,10.273246538929182,-55.745889983519149,-15.830657524344508,-0.45082701042007278,25.278440598820858,-0.3511444604942211,-74.313822078827926],"y":[4,10,3,8,2,5,6,9,7,1],"text":["Composite_Score_Standardized: -17.5070497<br />reorder(Player, +Composite_Score_Standardized): Reggie Miller<br />Composite_Score_Standardized: -17.5070497","Composite_Score_Standardized: 175.6003950<br />reorder(Player, +Composite_Score_Standardized): Micheal Jordan<br />Composite_Score_Standardized: 175.6003950","Composite_Score_Standardized: -41.0627226<br />reorder(Player, +Composite_Score_Standardized): Ray Allen<br />Composite_Score_Standardized: -41.0627226","Composite_Score_Standardized:  10.2732465<br />reorder(Player, +Composite_Score_Standardized): James Harden<br />Composite_Score_Standardized:  10.2732465","Composite_Score_Standardized: -55.7458900<br />reorder(Player, +Composite_Score_Standardized): George Gervin<br />Composite_Score_Standardized: -55.7458900","Composite_Score_Standardized: -15.8306575<br />reorder(Player, +Composite_Score_Standardized): Clyde Drexler<br />Composite_Score_Standardized: -15.8306575","Composite_Score_Standardized:  -0.4508270<br />reorder(Player, +Composite_Score_Standardized): Manu Ginobili<br />Composite_Score_Standardized:  -0.4508270","Composite_Score_Standardized:  25.2784406<br />reorder(Player, +Composite_Score_Standardized): Kobe Bryant<br />Composite_Score_Standardized:  25.2784406","Composite_Score_Standardized:  -0.3511445<br />reorder(Player, +Composite_Score_Standardized): Dwayne Wade<br />Composite_Score_Standardized:  -0.3511445","Composite_Score_Standardized: -74.3138221<br />reorder(Player, +Composite_Score_Standardized): Allen Iverson<br />Composite_Score_Standardized: -74.3138221"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":["rgba(36,77,113,1)","rgba(86,177,247,1)","rgba(31,66,99,1)","rgba(43,91,131,1)","rgba(27,60,89,1)","rgba(37,78,114,1)","rgba(41,86,124,1)","rgba(47,98,141,1)","rgba(41,86,124,1)","rgba(23,51,78,1)"],"opacity":1,"size":6.6141732283464574,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,114,178,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x2","yaxis":"y5","hoverinfo":"text","frame":null},{"x":[79.118121464151059,-37.309430826519161,50.433235675580335,23.703008116889944,3.5521580205169609,36.706186810041906,-69.290650263020908,-55.579240375082428],"y":[8,3,7,5,4,6,1,2],"text":["","","","","","","",""],"hovertext":["Composite_Score_Standardized:  79.1181215<br />reorder(Player, +Composite_Score_Standardized): Nikola Jokic<br />Composite_Score_Standardized:  79.1181215<br />label: ","Composite_Score_Standardized: -37.3094308<br />reorder(Player, +Composite_Score_Standardized): Moses Malone<br />Composite_Score_Standardized: -37.3094308<br />label: ","Composite_Score_Standardized:  50.4332357<br />reorder(Player, +Composite_Score_Standardized): Kareem Abdul-Jabaar<br />Composite_Score_Standardized:  50.4332357<br />label: ","Composite_Score_Standardized:  23.7030081<br />reorder(Player, +Composite_Score_Standardized): Hakeem Olajuwan<br />Composite_Score_Standardized:  23.7030081<br />label: ","Composite_Score_Standardized:   3.5521580<br />reorder(Player, +Composite_Score_Standardized): David Robinson<br />Composite_Score_Standardized:   3.5521580<br />label: ","Composite_Score_Standardized:  36.7061868<br />reorder(Player, +Composite_Score_Standardized): Shaquelle O'Neal<br />Composite_Score_Standardized:  36.7061868<br />label: ","Composite_Score_Standardized: -69.2906503<br />reorder(Player, +Composite_Score_Standardized): Patrick Ewing<br />Composite_Score_Standardized: -69.2906503<br />label: ","Composite_Score_Standardized: -55.5792404<br />reorder(Player, +Composite_Score_Standardized): Joel Embiid<br />Composite_Score_Standardized: -55.5792404<br />label: "],"textfont":{"size":7.559055118110237,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[12.8801389382311,16.041669230010186,6.4625451587504319,2.2077968630144582,-23.130312016197841,16.893001848852602,-54.9351595854829,-6.5838316896118503,60.208389096817612,-34.722020580310506,-46.560478894479424],"y":[8,9,7,6,4,10,1,5,11,3,2],"text":["","","","","","","","","","",""],"hovertext":["Composite_Score_Standardized:  12.8801389<br />reorder(Player, +Composite_Score_Standardized): Kevin McHale<br />Composite_Score_Standardized:  12.8801389<br />label: ","Composite_Score_Standardized:  16.0416692<br />reorder(Player, +Composite_Score_Standardized): Anthony Davis<br />Composite_Score_Standardized:  16.0416692<br />label: ","Composite_Score_Standardized:   6.4625452<br />reorder(Player, +Composite_Score_Standardized): Charles Barkley<br />Composite_Score_Standardized:   6.4625452<br />label: ","Composite_Score_Standardized:   2.2077969<br />reorder(Player, +Composite_Score_Standardized): Dirk Nowitzki<br />Composite_Score_Standardized:   2.2077969<br />label: ","Composite_Score_Standardized: -23.1303120<br />reorder(Player, +Composite_Score_Standardized): Pau Gasol<br />Composite_Score_Standardized: -23.1303120<br />label: ","Composite_Score_Standardized:  16.8930018<br />reorder(Player, +Composite_Score_Standardized): Giannis Antetokounmpo<br />Composite_Score_Standardized:  16.8930018<br />label: ","Composite_Score_Standardized: -54.9351596<br />reorder(Player, +Composite_Score_Standardized): Chris Bosh<br />Composite_Score_Standardized: -54.9351596<br />label: ","Composite_Score_Standardized:  -6.5838317<br />reorder(Player, +Composite_Score_Standardized): Draymond Green<br />Composite_Score_Standardized:  -6.5838317<br />label: ","Composite_Score_Standardized:  60.2083891<br />reorder(Player, +Composite_Score_Standardized): Tim Duncan<br />Composite_Score_Standardized:  60.2083891<br />label: ","Composite_Score_Standardized: -34.7220206<br />reorder(Player, +Composite_Score_Standardized): Karl Malone<br />Composite_Score_Standardized: -34.7220206<br />label: ","Composite_Score_Standardized: -46.5604789<br />reorder(Player, +Composite_Score_Standardized): Kevin Garnett<br />Composite_Score_Standardized: -46.5604789<br />label: "],"textfont":{"size":7.559055118110237,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x2","yaxis":"y2","hoverinfo":"text","frame":null},{"x":[117.23613896713586,3.3284821443701036,45.082986074139008,-11.376154478945486,-54.573885097997163,-59.151764252482522,-10.363221016917603,8.2477194787720691,-54.139795222432895,-67.238708967578361],"y":[10,7,9,5,3,2,6,8,4,1],"text":["","","","","","","","","",""],"hovertext":["Composite_Score_Standardized: 117.2361390<br />reorder(Player, +Composite_Score_Standardized): Magic Johnson<br />Composite_Score_Standardized: 117.2361390<br />label: ","Composite_Score_Standardized:   3.3284821<br />reorder(Player, +Composite_Score_Standardized): Chris Paul<br />Composite_Score_Standardized:   3.3284821<br />label: ","Composite_Score_Standardized:  45.0829861<br />reorder(Player, +Composite_Score_Standardized): Steph Curry<br />Composite_Score_Standardized:  45.0829861<br />label: ","Composite_Score_Standardized: -11.3761545<br />reorder(Player, +Composite_Score_Standardized): John Stockton<br />Composite_Score_Standardized: -11.3761545<br />label: ","Composite_Score_Standardized: -54.5738851<br />reorder(Player, +Composite_Score_Standardized): Steve Nash<br />Composite_Score_Standardized: -54.5738851<br />label: ","Composite_Score_Standardized: -59.1517643<br />reorder(Player, +Composite_Score_Standardized): Damien Lillard<br />Composite_Score_Standardized: -59.1517643<br />label: ","Composite_Score_Standardized: -10.3632210<br />reorder(Player, +Composite_Score_Standardized): Isaiah Thomas<br />Composite_Score_Standardized: -10.3632210<br />label: ","Composite_Score_Standardized:   8.2477195<br />reorder(Player, +Composite_Score_Standardized): Gary Payton<br />Composite_Score_Standardized:   8.2477195<br />label: ","Composite_Score_Standardized: -54.1397952<br />reorder(Player, +Composite_Score_Standardized): Russell Westbrook<br />Composite_Score_Standardized: -54.1397952<br />label: ","Composite_Score_Standardized: -67.2387090<br />reorder(Player, +Composite_Score_Standardized): Jason Kidd<br />Composite_Score_Standardized: -67.2387090<br />label: "],"textfont":{"size":7.559055118110237,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x3","yaxis":"y3","hoverinfo":"text","frame":null},{"x":[64.572423134166684,140.81109953665344,-15.408743328694898,36.721874320994552,53.456417050022843,4.5476864512695325,23.052347330905704,-93.259770759485946,-50.894853524136195,-66.635373684386977],"y":[9,10,4,7,8,5,6,1,3,2],"text":["","","","","","","","","",""],"hovertext":["Composite_Score_Standardized:  64.5724231<br />reorder(Player, +Composite_Score_Standardized): Kawhi Leonard<br />Composite_Score_Standardized:  64.5724231<br />label: ","Composite_Score_Standardized: 140.8110995<br />reorder(Player, +Composite_Score_Standardized): Lebron James<br />Composite_Score_Standardized: 140.8110995<br />label: ","Composite_Score_Standardized: -15.4087433<br />reorder(Player, +Composite_Score_Standardized): James Worthy<br />Composite_Score_Standardized: -15.4087433<br />label: ","Composite_Score_Standardized:  36.7218743<br />reorder(Player, +Composite_Score_Standardized): Kevin Durant<br />Composite_Score_Standardized:  36.7218743<br />label: ","Composite_Score_Standardized:  53.4564171<br />reorder(Player, +Composite_Score_Standardized): Larry Bird<br />Composite_Score_Standardized:  53.4564171<br />label: ","Composite_Score_Standardized:   4.5476865<br />reorder(Player, +Composite_Score_Standardized): Julius Erving<br />Composite_Score_Standardized:   4.5476865<br />label: ","Composite_Score_Standardized:  23.0523473<br />reorder(Player, +Composite_Score_Standardized): Scottie Pippen<br />Composite_Score_Standardized:  23.0523473<br />label: ","Composite_Score_Standardized: -93.2597708<br />reorder(Player, +Composite_Score_Standardized): Dominique Wilkins<br />Composite_Score_Standardized: -93.2597708<br />label: ","Composite_Score_Standardized: -50.8948535<br />reorder(Player, +Composite_Score_Standardized): Tracy McGrady<br />Composite_Score_Standardized: -50.8948535<br />label: ","Composite_Score_Standardized: -66.6353737<br />reorder(Player, +Composite_Score_Standardized): Paul Pierce<br />Composite_Score_Standardized: -66.6353737<br />label: "],"textfont":{"size":7.559055118110237,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y4","hoverinfo":"text","frame":null},{"x":[-17.507049650206614,175.60039498771718,-41.062722565177744,10.273246538929182,-55.745889983519149,-15.830657524344508,-0.45082701042007278,25.278440598820858,-0.3511444604942211,-74.313822078827926],"y":[4,10,3,8,2,5,6,9,7,1],"text":["","","","","","","","","",""],"hovertext":["Composite_Score_Standardized: -17.5070497<br />reorder(Player, +Composite_Score_Standardized): Reggie Miller<br />Composite_Score_Standardized: -17.5070497<br />label: ","Composite_Score_Standardized: 175.6003950<br />reorder(Player, +Composite_Score_Standardized): Micheal Jordan<br />Composite_Score_Standardized: 175.6003950<br />label: ","Composite_Score_Standardized: -41.0627226<br />reorder(Player, +Composite_Score_Standardized): Ray Allen<br />Composite_Score_Standardized: -41.0627226<br />label: ","Composite_Score_Standardized:  10.2732465<br />reorder(Player, +Composite_Score_Standardized): James Harden<br />Composite_Score_Standardized:  10.2732465<br />label: ","Composite_Score_Standardized: -55.7458900<br />reorder(Player, +Composite_Score_Standardized): George Gervin<br />Composite_Score_Standardized: -55.7458900<br />label: ","Composite_Score_Standardized: -15.8306575<br />reorder(Player, +Composite_Score_Standardized): Clyde Drexler<br />Composite_Score_Standardized: -15.8306575<br />label: ","Composite_Score_Standardized:  -0.4508270<br />reorder(Player, +Composite_Score_Standardized): Manu Ginobili<br />Composite_Score_Standardized:  -0.4508270<br />label: ","Composite_Score_Standardized:  25.2784406<br />reorder(Player, +Composite_Score_Standardized): Kobe Bryant<br />Composite_Score_Standardized:  25.2784406<br />label: ","Composite_Score_Standardized:  -0.3511445<br />reorder(Player, +Composite_Score_Standardized): Dwayne Wade<br />Composite_Score_Standardized:  -0.3511445<br />label: ","Composite_Score_Standardized: -74.3138221<br />reorder(Player, +Composite_Score_Standardized): Allen Iverson<br />Composite_Score_Standardized: -74.3138221<br />label: "],"textfont":{"size":7.559055118110237,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x2","yaxis":"y5","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":67.872146118721474,"r":7.3059360730593621,"b":24.109589041095894,"l":108.85844748858449},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"<b> Player Composite Score <\/b>","font":{"color":"rgba(0,0,0,1)","family":"","size":21.917808219178081},"x":0.5,"xref":"paper"},"xaxis":{"domain":[0,0.28481735159817351],"automargin":true,"type":"linear","autorange":false,"range":[-115,215],"tickmode":"array","ticktext":["-100","0","100","200"],"tickvals":[-100,1.4210854715202004e-14,100,200],"categoryorder":"array","categoryarray":["-100","0","100","200"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":8.7671232876712342},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y4","title":"","hoverformat":".2f"},"yaxis":{"domain":[0.51997716894977164,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,8.5999999999999996],"tickmode":"array","ticktext":["Patrick Ewing","Joel Embiid","Moses Malone","David Robinson","Hakeem Olajuwan","Shaquelle O'Neal","Kareem Abdul-Jabaar","Nikola Jokic"],"tickvals":[1,2,3,4,5,6,7,8],"categoryorder":"array","categoryarray":["Patrick Ewing","Joel Embiid","Moses Malone","David Robinson","Hakeem Olajuwan","Shaquelle O'Neal","Kareem Abdul-Jabaar","Nikola Jokic"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":8.7671232876712342},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":"","hoverformat":".2f"},"annotations":[{"text":"Player","x":0,"y":0.5,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xref":"paper","yref":"paper","textangle":-90,"xanchor":"right","yanchor":"center","annotationType":"axis","xshift":-93.515981735159869},{"text":"C","x":0.14240867579908675,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":18.264840182648406},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"PF","x":0.5,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":18.264840182648406},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"PG","x":0.85759132420091322,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":18.264840182648406},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"SF","x":0.14240867579908675,"y":0.4800228310502283,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":18.264840182648406},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"SG","x":0.5,"y":0.4800228310502283,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":18.264840182648406},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"}],"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":0.28481735159817351,"y0":0.51997716894977164,"y1":1},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":0.28481735159817351,"y0":0,"y1":29.954337899543386,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.38184931506849312,"x1":0.61815068493150682,"y0":0.51997716894977164,"y1":1},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.38184931506849312,"x1":0.61815068493150682,"y0":0,"y1":29.954337899543386,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.71518264840182644,"x1":1,"y0":0.51997716894977164,"y1":1},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.71518264840182644,"x1":1,"y0":0,"y1":29.954337899543386,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":0.28481735159817351,"y0":0,"y1":0.4800228310502283},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":0.28481735159817351,"y0":0,"y1":29.954337899543386,"yanchor":0.4800228310502283,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.38184931506849312,"x1":0.61815068493150682,"y0":0,"y1":0.4800228310502283},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.38184931506849312,"x1":0.61815068493150682,"y0":0,"y1":29.954337899543386,"yanchor":0.4800228310502283,"ysizemode":"pixel"}],"xaxis2":{"type":"linear","autorange":false,"range":[-115,215],"tickmode":"array","ticktext":["-100","0","100","200"],"tickvals":[-100,1.4210854715202004e-14,100,200],"categoryorder":"array","categoryarray":["-100","0","100","200"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":8.7671232876712342},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0.38184931506849312,0.61815068493150682],"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y5","title":"","hoverformat":".2f"},"yaxis2":{"type":"linear","autorange":false,"range":[0.40000000000000002,11.6],"tickmode":"array","ticktext":["Chris Bosh","Kevin Garnett","Karl Malone","Pau Gasol","Draymond Green","Dirk Nowitzki","Charles Barkley","Kevin McHale","Anthony Davis","Giannis Antetokounmpo","Tim Duncan"],"tickvals":[1,2,3,4,5,6,7,8,9,10,11],"categoryorder":"array","categoryarray":["Chris Bosh","Kevin Garnett","Karl Malone","Pau Gasol","Draymond Green","Dirk Nowitzki","Charles Barkley","Kevin McHale","Anthony Davis","Giannis Antetokounmpo","Tim Duncan"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":8.7671232876712342},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0.51997716894977164,1],"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x2","title":"","hoverformat":".2f"},"xaxis3":{"type":"linear","autorange":false,"range":[-115,215],"tickmode":"array","ticktext":["-100","0","100","200"],"tickvals":[-100,1.4210854715202004e-14,100,200],"categoryorder":"array","categoryarray":["-100","0","100","200"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":8.7671232876712342},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0.71518264840182644,1],"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y3","title":"","hoverformat":".2f"},"yaxis3":{"type":"linear","autorange":false,"range":[0.40000000000000002,10.6],"tickmode":"array","ticktext":["Jason Kidd","Damien Lillard","Steve Nash","Russell Westbrook","John Stockton","Isaiah Thomas","Chris Paul","Gary Payton","Steph Curry","Magic Johnson"],"tickvals":[1,2,3,4,5,6.0000000000000009,7,8,9,10],"categoryorder":"array","categoryarray":["Jason Kidd","Damien Lillard","Steve Nash","Russell Westbrook","John Stockton","Isaiah Thomas","Chris Paul","Gary Payton","Steph Curry","Magic Johnson"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":8.7671232876712342},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0.51997716894977164,1],"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x3","title":"","hoverformat":".2f"},"yaxis4":{"type":"linear","autorange":false,"range":[0.40000000000000002,10.6],"tickmode":"array","ticktext":["Dominique Wilkins","Paul Pierce","Tracy McGrady","James Worthy","Julius Erving","Scottie Pippen","Kevin Durant","Larry Bird","Kawhi Leonard","Lebron James"],"tickvals":[1,2,3,4,5,6.0000000000000009,7,8,9,10],"categoryorder":"array","categoryarray":["Dominique Wilkins","Paul Pierce","Tracy McGrady","James Worthy","Julius Erving","Scottie Pippen","Kevin Durant","Larry Bird","Kawhi Leonard","Lebron James"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":8.7671232876712342},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0,0.4800228310502283],"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":"","hoverformat":".2f"},"yaxis5":{"type":"linear","autorange":false,"range":[0.40000000000000002,10.6],"tickmode":"array","ticktext":["Allen Iverson","George Gervin","Ray Allen","Reggie Miller","Clyde Drexler","Manu Ginobili","Dwayne Wade","James Harden","Kobe Bryant","Micheal Jordan"],"tickvals":[1,2,3,4,5,6.0000000000000009,7,8,9,10],"categoryorder":"array","categoryarray":["Allen Iverson","George Gervin","Ray Allen","Reggie Miller","Clyde Drexler","Manu Ginobili","Dwayne Wade","James Harden","Kobe Bryant","Micheal Jordan"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":8.7671232876712342},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0,0.4800228310502283],"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x2","title":"","hoverformat":".2f"},"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"75141eaa7696":{"x":{},"y":{},"fill":{},"type":"scatter"},"75145726182d":{"x":{},"y":{},"fill":{},"label":{}}},"cur_data":"75141eaa7696","visdat":{"75141eaa7696":["function (y) ","x"],"75145726182d":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>##PCA</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(FactoMineR)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(factoextra)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(caret)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>predictors <span class="ot">&lt;-</span> <span class="fu">scale</span>(nba_data[, <span class="fu">c</span>(<span class="st">'PER_playoffs'</span>, <span class="st">'Offensive_win_shares_playoffs_per_season'</span>, </span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>                                 <span class="st">'Offensive_rating_playoffs'</span>, <span class="st">'VORP_playoffs_per_season'</span>, </span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>                                 <span class="st">'Box_plus_minus_playoffs'</span>, <span class="st">'Number_of_Championships'</span>, </span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>                                 <span class="st">'Win_shares_per_48_playoffs'</span>, <span class="st">'Defensive_win_shares_playoffs_per_season'</span>)])</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform PCA</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>pca_result <span class="ot">&lt;-</span> <span class="fu">PCA</span>(predictors, <span class="at">graph =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>pca_scores <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(pca_result<span class="sc">$</span>ind<span class="sc">$</span>coord[, <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>])</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>response <span class="ot">&lt;-</span> nba_data<span class="sc">$</span>Composite_Score_Standardized</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>regression_data <span class="ot">&lt;-</span> <span class="fu">cbind</span>(pca_scores, response)</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>lm_model <span class="ot">&lt;-</span> <span class="fu">lm</span>(response <span class="sc">~</span> ., <span class="at">data =</span> regression_data)</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = response ~ ., data = regression_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.9395 -1.8026 -0.7775  1.4320  7.0044 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  2.954e-15  4.188e-01   0.000   1.0000    
+Dim.1        2.646e+01  2.061e-01 128.386  &lt; 2e-16 ***
+Dim.2       -9.441e-01  3.620e-01  -2.608   0.0125 *  
+Dim.3        1.076e+01  4.100e-01  26.250  &lt; 2e-16 ***
+Dim.4        1.255e+00  4.919e-01   2.551   0.0144 *  
+Dim.5        5.122e+00  6.950e-01   7.370 3.77e-09 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 2.932 on 43 degrees of freedom
+Multiple R-squared:  0.9975,    Adjusted R-squared:  0.9972 
+F-statistic:  3448 on 5 and 43 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get coefficients from the regression model</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>regression_coefficients <span class="ot">&lt;-</span> <span class="fu">coef</span>(lm_model)[<span class="sc">-</span><span class="dv">1</span>]  </span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>pca_loadings <span class="ot">&lt;-</span> pca_result<span class="sc">$</span>var<span class="sc">$</span>coord</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>original_variable_influence <span class="ot">&lt;-</span> pca_loadings <span class="sc">%*%</span> </span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">matrix</span>(regression_coefficients, <span class="at">ncol =</span> <span class="dv">1</span>)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>original_variable_influence</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                                             [,1]
+PER_playoffs                             15.78345
+Offensive_win_shares_playoffs_per_season 25.23236
+Offensive_rating_playoffs                16.13816
+VORP_playoffs_per_season                 24.27222
+Box_plus_minus_playoffs                  19.70058
+Number_of_Championships                  19.66313
+Win_shares_per_48_playoffs               13.73554
+Defensive_win_shares_playoffs_per_season 18.03842</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gganimate)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>influence_data <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(original_variable_influence)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>influence_data<span class="sc">$</span>Variable <span class="ot">&lt;-</span> <span class="fu">rownames</span>(original_variable_influence)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(influence_data) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Influence"</span>, <span class="st">"Variable"</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>Coefficients <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(influence_data, </span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">y =</span> Variable, <span class="at">x =</span> Influence,</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>           <span class="at">fill =</span> Variable)) <span class="sc">+</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Coefficient Value"</span>) <span class="sc">+</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Coefficients"</span>) <span class="sc">+</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Coefficient Plot of Original Variables"</span>) <span class="sc">+</span> </span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)<span class="sc">+</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_blank</span>()) <span class="sc">+</span> </span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">5</span>))<span class="sc">+</span> </span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.title=</span><span class="fu">element_blank</span>()) <span class="sc">+</span></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">enter_fade</span>()<span class="sc">+</span></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">exit_fade</span>()</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>Coefficients</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="nba_best_players-tmp_files/figure-html/unnamed-chunk-6-1.gif" class="img-fluid"></p>
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script type="text/javascript" src="links.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">Powered with GitHub and Quarto<br>© Nicky Andrews, 2023</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

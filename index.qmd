@@ -1,41 +1,34 @@
 ---
-title: "Nicholas Andrews" 
+title: "Nicky Andrews" 
 about:
-  template: trestles  # jolla  trestles  solana  marquee  broadside
-  image: img/profile.png
-  image-width: 16em
-  image-shape: round # rectangle  round  rounded
-  
+  template: jolla
+  image: img/logo.png
   links:
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
-    - icon: instagram
-      text: Instagram
-      href: https://instagram.com
-    - icon: github
-      text: GitHub
-      href: https://github.com
-    - icon: file-earmark-pdf
-      text: Resumé
-      href: https://GITHUB_USERNAME.github.io/resume-example.pdf
-    - icon: mailbox
-      text: Email
-      href: mailto:YOUR_EMAIL@geneseo.edu
-
+    - text: GitHub
+      icon: github
+      href: https://github.com/nicka5
+    - text: LinkedIn
+      icon: linkedin
+      href: https://www.linkedin.com/in/YOUR_LINKEDIN/
+    - text: Twitter
+      icon: twitter
+      href: https://twitter.com/YOUR_SOCIAL_MEDIA
+    - text: Email
+      icon: envelope
+      href: mailto:nsa5@geneseo.edu
+    - text: Résumé
+      icon: file-pd
+      href: https://YOUR_GITHUB.github.io/YOUR_RESUME.pdf
 ---
 
 
-Finley Malloc majors in Data Analytics at SUNY Geneseo. When not working on data analytics, Finley enjoys spending time unicycling and playing with her pet iguana.
+I am a student at State University of New York at Geneseo. As an Economics major I am interested in research. My favorite research sectors are the economics of policy development and the economics of sports. Although these two sectors interest me the most, any research that may cause actual change interests me.
+Outside of economics I am a college runner at the D3 level. I have seem great success through my ability to put forth a high amount of work ethic, time management, and communication skills with teammates. 
+
 
 ## Education
 
-State University of New York at Geneseo | Geneseo, NY <br>
-B.S. in Data Analytics | Aug 2022 - May 2026 <br>
-Minor in Business Administration 
-
-## Experience
-
-Starbucks Analytics | Data Analyst Intern | May 2024 - Aug 2024
-
+**State University of New York at Geneseo**, 2023<br>
+- B.A. in Economics<br>
+- Minor in Data Analytics
 

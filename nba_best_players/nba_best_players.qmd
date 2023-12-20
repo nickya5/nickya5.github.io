@@ -139,6 +139,15 @@ fig
 
 ```
 
+#Shiny
+
+````{=html}
+<style>iframe{height: 600px; width: 900px}</style>
+<iframe height="100%" width="100%" frameborder="no"
+src="https://nickya1.shinyapps.io/nbashiny/">
+</iframe>
+````
+
 ##PCA 
 
 ```{r}

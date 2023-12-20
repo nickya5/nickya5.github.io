@@ -2,7 +2,7 @@
 title: "Nicky Andrews" 
 about:
   template: jolla
-  image: img/logo.png
+  image: img/profile.png
   links:
     - text: GitHub
       icon: github

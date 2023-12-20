@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-date','listing-title','listing-author','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="beer">beer <span class="quarto-category-count">(1)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(3)</span></div><div class="category" data-category="data analysis">data analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(2)</span></div><div class="category" data-category="starwars">starwars <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="beer">beer <span class="quarto-category-count">(2)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(4)</span></div><div class="category" data-category="data analysis">data analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="data-analysis">data-analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(2)</span></div><div class="category" data-category="starwars">starwars <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -192,35 +192,7 @@ ul.task-list li input[type="checkbox"] {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="beer,code,data analysis" data-listing-date-sort="1698897600000" data-listing-file-modified-sort="1703015276592" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
-<div class="thumbnail">
-<p><a href="./posts/beer-markets/beer-markets.html"> <img src="./posts/beer-markets/image.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/beer-markets/beer-markets.html">
-<h3 class="no-anchor listing-title">
-Beer Markets
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/beer-markets/beer-markets.html">
-<div class="listing-date">
-Nov 2, 2023
-</div>
-<div class="listing-author">
-Byeong-Hak Choe
-</div>
-<div class="listing-reading-time">
-9 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="starwars,code,analysis" data-listing-date-sort="1698638400000" data-listing-file-modified-sort="1703015277580" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="0" data-categories="starwars,code,analysis" data-listing-date-sort="1698638400000" data-listing-file-modified-sort="1703015277580" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="thumbnail">
 <p><a href="./posts/starwars/starwars_df.html"> <img src="./posts/starwars/image.png" class="thumbnail-image"> </a></p>
 </div>
@@ -248,7 +220,7 @@ Your Name
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="news,code,analysis" data-listing-date-sort="1698638400000" data-listing-file-modified-sort="1703015277276" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="news,code,analysis" data-listing-date-sort="1698638400000" data-listing-file-modified-sort="1703015277276" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./posts/post-with-code/index.html"> <img src="./posts/post-with-code/image.jpg" class="thumbnail-image"> </a></p>
 </div>
@@ -276,7 +248,7 @@ YOUR NAME
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="news" data-listing-date-sort="1698379200000" data-listing-file-modified-sort="1703015277777" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="2" data-categories="news" data-listing-date-sort="1698379200000" data-listing-file-modified-sort="1703015277777" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./posts/welcome/index.html"> <p class="card-img-top"><img src="posts\welcome\thumbnail.jpg"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
@@ -300,6 +272,90 @@ YOUR NAME
 </div>
 <div class="listing-reading-time">
 1 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="NaN" data-listing-file-modified-sort="1703021660546" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
+<div class="thumbnail">
+<p><a href="./posts/nba_best_players/nba_best_players_writeup.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="./posts/nba_best_players/nba_best_players_writeup.html">
+<h3 class="no-anchor listing-title">
+NBA Write Up
+</h3>
+<div class="listing-subtitle">
+Final Reflection
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/nba_best_players/nba_best_players_writeup.html">
+<div class="listing-date">
+Invalid Date
+</div>
+<div class="listing-author">
+Nicky Andrews, <br>
+</div>
+<div class="listing-reading-time">
+8 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="beer,code,data-analysis" data-listing-date-sort="1702789200000" data-listing-file-modified-sort="1703093010759" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="thumbnail">
+<p><a href="./posts/nba_best_players/nba_best_players.html"> <img src="./posts/nba_best_players/nba_best_players.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/nba_best_players/nba_best_players.html">
+<h3 class="no-anchor listing-title">
+NBA Best Lineup
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/nba_best_players/nba_best_players.html">
+<div class="listing-date">
+Dec 17, 2023
+</div>
+<div class="listing-author">
+Nicholas Andrews
+</div>
+<div class="listing-reading-time">
+7 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="beer,code,data analysis" data-listing-date-sort="1698897600000" data-listing-file-modified-sort="1703015276592" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
+<div class="thumbnail">
+<p><a href="./posts/beer-markets/beer-markets.html"> <img src="./posts/beer-markets/image.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/beer-markets/beer-markets.html">
+<h3 class="no-anchor listing-title">
+Beer Markets
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/beer-markets/beer-markets.html">
+<div class="listing-date">
+Nov 2, 2023
+</div>
+<div class="listing-author">
+Byeong-Hak Choe
+</div>
+<div class="listing-reading-time">
+9 min
 </div>
 </a>
 </div>

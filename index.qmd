@@ -9,16 +9,13 @@ about:
       href: https://github.com/nicka5
     - text: LinkedIn
       icon: linkedin
-      href: https://www.linkedin.com/in/YOUR_LINKEDIN/
-    - text: Twitter
-      icon: twitter
-      href: https://twitter.com/YOUR_SOCIAL_MEDIA
+      href: https://www.linkedin.com/in/nicky-andrews/
     - text: Email
       icon: envelope
       href: mailto:nsa5@geneseo.edu
     - text: Résumé
       icon: file-pd
-      href: https://YOUR_GITHUB.github.io/YOUR_RESUME.pdf
+      href: https://nickya5.github.io/Nicholas Andrews Resume.pdf
 ---
 
 

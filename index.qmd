@@ -15,7 +15,7 @@ about:
       href: mailto:nsa5@geneseo.edu
     - text: Résumé
       icon: file-pd
-      href: https://nickya5.github.io/Nicholas Andrews Resume.pdf
+      href: file:///C:/Users/nicka/OneDrive/Desktop/Job%20and%20Internship/Nicholas%20Andrews%20Resume.pdf
 ---
 
 

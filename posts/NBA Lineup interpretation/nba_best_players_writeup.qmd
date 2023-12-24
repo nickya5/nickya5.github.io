@@ -1,51 +1,54 @@
 ---
-title: "NBA Write Up"
-subtitle: "Final Reflection" 
-author:
-  - name: Nicky Andrews
-    affiliations:
-      - name: SUNY Geneseo
-  - <br>
-date: "`r Sys.Date()`"
-format: 
-  html:
-    toc: true
-    toc-location: left
-    code-fold: false
-    code-summary: "Show the code"
-    code-tools: true
-    highlight-style: tango
-    
+title: "Best possible NBA lineup"
+author: "Nicholas Andrews"
+date: "2023-12-17"
+categories: [data-analysis]
+image: "nba_best_players.png"
+
+execute: 
+  warning: false
+  message: false
+  echo: true
+  eval: true
+  fig-width: 9
+  
+toc: true
 ---
 
-```{r setup, include = FALSE}
+
+```{r setup}
+#| include: false
+
 library(tidyverse)
+library(socviz)
+library(lubridate)
 library(knitr)
 library(kableExtra)
 library(ggthemes)
 library(ggthemr)
 library(ggthemes)
+library(ggrepel)
 library(hrbrthemes)
 library(hexbin)
 library(ggforce)
-library(skimr)
-library(socviz)
+library(RColorBrewer)
+library(ggplot2)
+library(readxl)
+library(plotly)
 
 knitr::opts_chunk$set(fig.width=8, fig.height=5,
                       echo = T, eval = T, 
                       message=F, warning = F, fig.cap = " ")  
 
-theme_set(theme_fivethirtyeight() +
+theme_set(theme_classic() +
           theme(strip.background =element_rect(fill="lightgray"),
                 axis.title.x = element_text(size=rel(1)),
                 axis.title.y = element_text(size=rel(1)),
                 ))
 ```
 
-#Nicholas Andrews
-#Byeong-Hak Choe
-#DANL 399
-#Dec 17, 2023
+#Interpritation
+```{r}
 #The Greatest NBA Playoff Lineup
 #Introduction
 #	Who would you pick if you wanted to create an all-time starting 5 to win the NBA title? Would you pick the best scorers? After all, a team simply needs to score as many points as possible to win. Or would you pick the best defenders? If you prevent the opposing team from scoring, your team will probably win. You may want the most unique players. Having un-guardable moves like Steph Curry’s three-point shot, or Kareem’s sky hook. These conversations are referred to as “Barbershop” talk. A fun, sometimes heated debate about certain sports takes. As fun as these talks are, they tend to be merely subjective. Even when individuals bring up counting statistics (typically “per game” statistics), these statistics do not paint an objective view of the topic at hand. For example, if a player plays in a slower-paced era but impacts the team's offense tremendously, their “Points Per Game” may be less than an inferior player who plays in a fast-paced offense.
@@ -76,7 +79,7 @@ theme_set(theme_fivethirtyeight() +
 #Valuation	
 #Before weighting the variables, the data was standardized to account for the differing values. This made the value of each variable have equal means and standard deviations so the results are not skewed by values that are measured differently. To calculate the composite score, standardized variables were multiplied by the corresponding weights, and then summed. 
 #	After the proper weights were applied, the variables were then used to generate a composite score. This composite score is what determines the value of the player's impact on winning in the playoffs. 
-PCA Regression
+#PCA Regression
 #	Beyond the question of who the best players are, it is worth exploring what variables impact winning the most. To find this out, a PCA regression was run on the dataset. Since the data has many variables, it felt appropriate to use a PCA model to reduce the dimensionality of the data. 
 #Results
 #Composite Score 
@@ -89,10 +92,4 @@ PCA Regression
 #It must be noted that players before the 1971-1972 season were not used because of the lack of data. This means players like Bill Russell and Wilt Chamberlain were not used, who could have shaken the results up given how much success both of them had. 
 #	For future research, I would recommend researching what systems produce the most success. Lots of titles are won because of a specific type of system, which means some offensive/defensive systems work better than others. If GM can get the right kind of players and the perfect playoff system, this team undoubtedly will have great playoff success.
 
-
-
-
-
-
-
-
+```

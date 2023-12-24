@@ -1,0 +1,11 @@
+---
+title: "Welcome To My Blog"
+author: "Nicholas Andrews"
+categories: [news]
+---
+
+Hello! My name is Nicholas Andrews. I have always been faciniated with economic research across all sectors, and felt that adding to that research in important. So, I decided to start a blog! Much inspired by the old version of Nathan Silver's fivethirtyeight, this blog focuses on policy development and sports. I hope you enjoy going over the data collected and my own interpretation of said data. 
+
+![](thumbnail.jpg)
+
+Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.

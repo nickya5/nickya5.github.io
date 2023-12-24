@@ -2,12 +2,7 @@
   {
     "listing": "/blog-listing.html",
     "items": [
-      "/posts/starwars/starwars_df.html",
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html",
-      "/posts/nba_best_players/nba_best_players_writeup.html",
-      "/posts/nba_best_players/nba_best_players.html",
-      "/posts/beer-markets/beer-markets.html"
+      "/posts/nba_best_players/nba_best_players.html"
     ]
   }
 ]
